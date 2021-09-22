@@ -18,8 +18,10 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-    <link rel="stylesheet" href="/styles.css?v=1.0">
+    <link rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
 
+    <link rel="stylesheet" href="/styles.css?v=1.0">
 </head>
 
 <body>
@@ -45,12 +47,12 @@
 <ul>
     <li>
         <p>Hvis du bruker Homebrew kan du installere med</p>
-        <code>$ brew install nodejs</code>
+        <pre><code class="language-shell">$ brew install nodejs</code></pre>
     </li>
     <li>
         <p>På Linux kan du installere med <code>apt</code> eller <code>dnf</code> eller en annen "package manager"
             avhengig av hva slags Linux-distribusjon du bruker</p>
-        <code>$ sudo dnf install nodejs</code>
+        <pre><code class="language-shell">$ sudo dnf install nodejs</code></pre>
     </li>
 </ul>
 
@@ -58,11 +60,35 @@
 
 <p>Sjekk at Node.js er installert ved å kjøre følgende kommando i Terminalen:</p>
 
-<code>$ npm</code>
+<pre><code class="language-shell">$ npm</code></pre>
 
 <p>Hvis du får dette ut så er alt installert:</p>
 
-<code>$ npm
+<pre><code class="language-plaintext" id="npm-man"></code></pre>
+
+<h2>Sjekk at create-react-app fungerer</h2>
+
+<p>Vi kommer til å bruke Create React App for å pang-starte prosjektet vårt!</p>
+
+<ol>
+    <li>
+        <p>Bruk <code>npx</code> til å sjekke at du får startet et React-prosjekt</p>
+        <pre><code class="language-shell">$ npx create-react-app min-testapp</code></pre>
+    </li>
+</ol>
+
+<p>Det skal da se ca. sånn ut:</p>
+
+<img src="/gifs/create_react_app.gif" alt="" />
+
+<p>Merk at dette kan ta opp mot 5 minutter avhengig av hvor raskt internett du har eller
+hvor rask PC'en din er.</p>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+<script>
+const manPage = `$ npm
 
 Usage: npm <command>
 
@@ -89,28 +115,11 @@ Specify configs in the ini-formatted file:
 or on the command line via: npm <command> --key value
 Config info can be viewed via: npm help config
 
-npm@6.14.13 /home/benedicte/.nvm/versions/node/v14.16.1/lib/node_modules/npm
-</code>
+npm@6.14.13 /home/benedicte/.nvm/versions/node/v14.16.1/lib/node_modules/npm`
 
-<h2>Sjekk at create-react-app fungerer</h2>
-
-<p>Vi kommer til å bruke Create React App for å pang-starte prosjektet vårt!</p>
-
-<ol>
-    <li>
-        <p>Bruk <code>npx</code> til å sjekke at du får startet et React-prosjekt</p>
-        <code>$ npx create-react-app min-testapp</code>
-    </li>
-</ol>
-
-<p>Det skal da se ca. sånn ut:</p>
-
-<img src="/gifs/create_react_app.gif" alt="" />
-
-<p>Merk at dette kan ta opp mot 5 minutter avhengig av hvor raskt internett du har eller
-hvor rask PC'en din er.</p>
+document.getElementById("npm-man").textContent = manPage;
+</script>
 
 </body>
-
 
 </html>
