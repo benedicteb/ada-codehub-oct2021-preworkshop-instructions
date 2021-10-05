@@ -26,14 +26,49 @@
 
 <body>
 
-<h1>CodeHub workshop med Benedicte fra FINN</h1>
+<h1>La oss bygge en chatteapplikasjon!</h1>
 
-<strong>Onsdag 25. oktober 2021</strong>
+<strong>Ada Codehub workshop med Benedicte fra FINN onsdag 25. oktober 2021</strong>
 
 <p>For at du skal få så mye tid som mulig til å jobbe med oppgaven i
     workshopen så er det veldig lurt å sette opp noen småting på forhånd.</p>
 
-<h2>1 Installer Node.js</h2>
+<h2>1 Finn deg en ren tekst-editor</h2>
+
+<p>For å skrive kode så må vi ha en ren tekst-editor!</p>
+
+<p>Her fungerer det aller meste. Hvis du er vant med å programmere
+    bruker du kanskje PyCharm, eller Atom, eller Visual Studio Code eller noe lignende allerede. Da
+kan du hoppe videre til kapittel 2.</p>
+
+<p>Det har absolutt ingen ting å si akkurat hvilken teksteditor du bruker. Men hvis du aldri har
+    brukt en ren tekst-editor før, så
+    er det instruksjoner her for å installere Visual Studio Code.</p>
+
+<h3>1.1 Installer Visual Studio Code</h3>
+
+<ol>
+    <li>Last ned Visual Studio Code <a href="https://code.visualstudio.com/Download" target="_blank">her</a></li>
+    <li>På macOS dobbeltklikk på zip-filen og kopier programmet inn i Programmer-mappen. På Windows dobbeltklikk på installasjonsfilen
+        og følg instruksjonene</li>
+</ol>
+
+<h3>1.2 Sjekk at du kan kjøre kommandoer i Terminalen</h3>
+
+<p>Terminalen er det vinduet nederst i Visual Studio Code:</p>
+
+<img src="/imgs/terminal.png" />
+
+<ol>
+    <li>Klikk innenfor Terminal-vinduet og skriv <code>ls</code> hvis du har macOS
+    og <code>dir</code> hvis du har Windows</li>
+    <li>Trykk enter</li>
+    <li>Du skal nå ha fått en liste med mapper og filer. Hvis noe gikk galt ville du ha fått en feilmelding!</li>
+</ol>
+
+<p>Gratulerer! Du har nå kjørt din første Terminal-kommando!</p>
+
+<h2>2 Installer Node.js</h2>
 
 <p>Vi kommer til å bruke React i workshopen. Det er et rammeverk som er basert
     på Node.js</p>
@@ -43,7 +78,7 @@
     <li>Dobbeltklikk på msi-filen hvis du er på Windows eller pkg-filen hvis du er på macOS og følg instruksjonene for å installere</a></li>
 </ol>
 
-<h3>1.1 Andre måter å installere på</h3>
+<h3>2.1 Andre måter å installere på</h3>
 
 <p style="font-style: italic;">N.B.: Dette er bare for de spesielt interessert!</p>
 
@@ -59,39 +94,46 @@
     </li>
 </ul>
 
-<h3>1.2 Sjekk at den er installert</h3>
+<h3>2.2 Sjekk at den er installert</h3>
 
 <p>Sjekk at Node.js er installert ved å kjøre følgende kommando i Terminalen:</p>
 
 <pre><code class="language-shell">$ npm</code></pre>
 
+<p><strong>Merk: Du skal bare skrive det som kommer etter dollartegnet.</strong></p>
+
 <p>Hvis du får dette ut så er alt installert:</p>
 
 <pre><code class="language-plaintext" id="npm-man"></code></pre>
 
-<h2>2 Sjekk at create-react-app fungerer</h2>
+<h2>3 Last ned pre-koden</h2>
 
-<p>Vi kommer til å bruke Create React App for å pang-starte prosjektet vårt!</p>
+<p>I workshoppen skal vi fortsette på et React-prosjekt som jeg har kickstartet.</p>
+
+<ol>
+    <li>Last ned denne zip-filen og pakk den ut</li>
+    <li>Åpne opp mappen du lastet ned i Visual Studio Code ved å. Det skal se slik ut:</li>
+</ol>
+
+<h3>3.1 Sjekk at du kan kjøre prosjektet</h3>
 
 <ol>
     <li>
-        <p>I de neste stegene kommer du til å trenge en terminal. Hvis du har macOS, åpne Spotlight ved å trykke Command+Space, skriv
-            "Terminal" og trykk enter.</p>
+        <p>Skriv følgende i Terminalen:</p>
 
-        <p>Hvis du er på Windows har du kanskje en terminal i editoren din (f.eks. Visual Studio Code, PyCharm).</p>
+        <pre><code class="language-shell">$ npm start</code></pre>
     </li>
-    <li>
-        <p>Bruk <code>npx</code> til å sjekke at du får startet et React-prosjekt</p>
-        <pre><code class="language-shell">$ npx create-react-app min-testapp</code></pre>
-    </li>
+    <li>Det skal da se ca. sånn ut:</li>
+    <li>Gå til denne lenken og sjekk at det ser sånn ut:</li>
 </ol>
 
-<p>Det skal da se ca. sånn ut:</p>
+<p>Du er nå klar for workshop! Vi sees!</p>
 
-<img src="/gifs/create_react_app.gif" alt=""/>
+<p>Hvis du har lyst til å forberede deg mer, ta en titt på et par videoer på YouTube om React.
+Prøv så å navigere deg litt rundt i filene i prosjektet, forsøk å endre på ting og se hva som
+skjer med nettsiden.</p>
 
-<p>Merk at dette kan ta opp mot 5 minutter avhengig av hvor raskt internett du har eller
-    hvor rask PC'en din er.</p>
+<p>Det er ikke farlig å bare endre på ting og se hva som skjer!</p>
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
