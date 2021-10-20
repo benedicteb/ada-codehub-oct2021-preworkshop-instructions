@@ -255,11 +255,6 @@ useEffect(() => {
    console.log(message.text);
  });
 }, []);
-
-return (
- <div className="App">
-   <main>
-     <h1>CodehubCHAT!</h1>
 ```
 
 
@@ -285,12 +280,115 @@ useEffect(() => {
        [...currentMessages, message]);
    });
 }, []);
-
-return (
- <div className="App">
-   <main>
-     <h1>CodehubCHAT!</h1>
 ```
 
 
 <img alt="Meldingene dukker opp etter hvert som de kommer inn" width="90%" src="/gifs/incoming_messages.gif" />
+
+
+
+## Del 4
+
+Men! Vi må da kunne sende meldinger også!
+
+Vi legger til et **input-felt** for tekst og en
+**knapp** for å sende melding
+
+
+### 1: Legg til input-felt og knapp
+
+```javascript
+Fil: src/App.js
+```
+
+```javascript [8-11]
+<main>
+  <h1>CodehubCHAT!</h1>
+
+  {messages.map((message) => (
+    <p>{message.text}</p>
+  ))}
+
+  <form>
+    <input type="text" id="chat-input-field" />
+    <button type="submit">Send</button>
+  </form>
+</main>
+```
+
+
+![Lagt til input-felt og knapp](/imgs/added_form.png)
+
+
+### 2: Håndter klikk
+
+Når vi trykker på knappen må vi få tak i teksten som er skrevet inn
+
+Vi kan skrive den til **konsollet** for å teste
+
+```javascript
+Fil: src/App.js
+```
+
+```javascript [3-11]
+ <button
+   type="submit"
+   onClick={(event) => {
+     event.preventDefault();
+
+     const textInputField =
+       document.getElementById("chat-input-field");
+     const inputtedMessage = textInputField.value;
+
+     console.log(inputtedMessage);
+   }}
+ >
+```
+
+
+![Teksten vises i konsollet når vi klikker på knappen](/imgs/add_click_handler.png)
+
+
+### 3: Legg til URL
+
+Akkurat som med subscribe-url'en så trenger vi
+en egen url for å sende meldinger
+
+```javascript
+Fil: src/App.js
+```
+
+```javascript [3-4]
+const SUBSCRIBE_URL =
+  "https://codehub-simple-chat-api.herokuapp.com/subscribe";
+const SEND_MESSAGE_URL =
+  "https://codehub-simple-chat-api.herokuapp.com/sendMessage";
+```
+
+
+### 4: Send inn meldingen
+
+Nå er vi klare for å sende inn!
+
+```javascript
+Fil: src/App.js
+```
+
+```javascript []
+  const inputtedMessage = textInputField.value;
+
+  fetch(SEND_MESSAGE_URL, {
+    method: "POST",
+    headers: {
+      Authorization: "duerkul",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      message: inputtedMessage,
+      nick: "Your name",
+    }),
+  });
+```
+
+
+![Meldingene blir sendt, og vi får de tilbake](/imgs/messages_are_sent.png)
