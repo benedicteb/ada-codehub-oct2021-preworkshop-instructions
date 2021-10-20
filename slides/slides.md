@@ -33,11 +33,77 @@
 
 
 
-## Oppgave 1
+## Del 1
 
-1. Få pre-koden til å kjøre
-2. Legg til styling
 
+### I Start prosjektet
+
+Pass på at du har vært gjennom [pre-workshop instruksjonene](https://codehub2021.benedicte.dev/)
+aller først
+
+1. Last ned [pre-koden](https://github.com/benedicteb/simple-chat/archive/refs/heads/main.zip)
+2. Åpne mappen i Visual Studio Code
+3. Installer avhengigheter
+   ```shell
+   $ npm install
+   ```
+4. Start
+   ```shell
+   $ npm start
+   ```
+
+
+### II Legg til tekst
+
+La oss sjekke at vi kan legge til ting på skjermen
+
+```
+Fil: src/App.js
+```
+
+```javascript [9]
+function App() {
+  return (
+    <div className="App">
+      <main>
+        <h1>CodehubCHAT!</h1>
+
+        <p>Du er nå klar for workshop.</p>
+
+        <p>Dette er en ny setning.</p>
+      </main>
+    </div>
+  );
+}
+```
+
+
+![Dette er en ny setning](/imgs/added_sentence.png)
+
+
+### III Legg til styling
+
+Vi kan bruke CSS for å endre på utseende
+
+```javascript
+Fil: src/index.css
+```
+
+```css [9]
+body {
+  font-family: -apple-system, BlinkMacSystemFont,
+  'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans',
+  'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: #1b91ff;
+}
+```
+
+
+![Endret bakgrunnsfargen](/imgs/changed_backgroundcolor.png)
 
 
 ## Oppgave 2
