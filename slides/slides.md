@@ -7,12 +7,11 @@
 ## Agenda
 
 
-
-## Lightning talk
-
+## Lyntalen
 
 
-## About FINN
+
+## Om oss (og om FINN)
 
 
 ## Benedicte
@@ -34,6 +33,12 @@
 
 
 ## Del 1
+
+Vi sjekker at vi får startet prosjektet
+
+At vi får lagt til ting på skjermen
+
+Og at får endret på farger og styling
 
 
 ### 1: Start prosjektet
@@ -108,6 +113,10 @@ body {
 
 
 ## Del 2
+
+Ting må dukke opp på skjermen når variabler oppdaterer seg
+
+Vi jobber med **state management**
 
 
 ### 1: Liste for å lagre meldinger
@@ -185,6 +194,10 @@ function App() {
 ## Del 3
 
 Nå skal vi endelig ta imot ting fra internett!
+
+Vi legger til selve lytteren
+
+Og viser nye meldinger på skjermen etter hvert som de kommer inn
 
 
 ### 1: Legg til en lytter
