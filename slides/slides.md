@@ -2,6 +2,17 @@
 
 ### La oss bygge en chat!
 
+```
+https://codehub2021.benedicte.dev/slides
+```
+
+Nyttig å ha den åpen i en fane!
+
+![QR kode som tar deg til slidene](/imgs/codehub_slides_qrcode.png)
+
+
+<img src="/imgs/codehub_slides_qrcode.png" alt="QR kode som tar deg til slidene" width="70%" />
+
 
 
 ## Agenda
