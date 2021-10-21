@@ -392,3 +392,28 @@ Fil: src/App.js
 
 
 ![Meldingene blir sendt, og vi får de tilbake](/imgs/messages_are_sent.png)
+
+
+### 5: Tøm tekstfeltet når meldingen er sendt
+
+Ellers er det ikke så lett å vite at meldingen er sendt
+
+```javascript
+Fil: src/App.js
+```
+
+```javascript [13]
+  fetch(SEND_MESSAGE_URL, {
+    method: "POST",
+    headers: {
+      Authorization: "duerkul",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      message: inputtedMessage,
+      nick: "Your name",
+    }),
+  });
+
+  textInputField.value = "";
+```
