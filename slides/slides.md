@@ -370,6 +370,8 @@ const SEND_MESSAGE_URL =
 
 Nå er vi klare for å sende inn!
 
+**Pass på å fylle inn kallenavnet ditt**
+
 ```javascript
 Fil: src/App.js
 ```
@@ -385,7 +387,7 @@ Fil: src/App.js
     },
     body: JSON.stringify({
       message: inputtedMessage,
-      nick: "Your name",
+      nick: "NAVNET DITT HER",
     }),
   });
 ```
@@ -417,3 +419,123 @@ Fil: src/App.js
 
   textInputField.value = "";
 ```
+
+
+
+## Del 5
+
+La oss få det til å se litt kult ut!
+
+
+### 1: Legg til styling på meldingene
+
+```javascript
+Fil: src/App.js
+```
+
+```javascript [3-4]
+import "./App.css";
+import { useEffect, useState } from "react";
+import Chat from "./components/Chat";
+import ChatMessage from "./components/ChatMessage";
+```
+
+```javascript []
+<Chat>
+ {messages.map((message) => {
+   return (
+     <ChatMessage
+         avatarSrc={message.avatarUrl}
+         name={message.sender}>
+       {message.text}
+     </ChatMessage>
+   );
+ })}
+</Chat>
+```
+
+
+![Meldinger ser mye kulere ut med styling](/imgs/added_chat_styling.png)
+
+
+### 2: Lag variabel for navnet ditt
+
+Vi må gjenbruke navnet vårt, derfor er det fint å ha det i en variabel
+
+```javascript
+Fil: src/App.js
+```
+
+```javascript [6]
+const SUBSCRIBE_URL =
+  "https://codehub-simple-chat-api.herokuapp.com/subscribe";
+const SEND_MESSAGE_URL =
+  "https://codehub-simple-chat-api.herokuapp.com/sendMessage";
+
+const NICK = "Benedicte";
+```
+
+
+### 2: Lag variabel for navnet ditt
+
+```javascript
+Fil: src/App.js
+```
+
+```javascript [9]
+fetch(SEND_MESSAGE_URL, {
+   method: "POST",
+   headers: {
+      Authorization: "duerkul",
+      "Content-Type": "application/json",
+   },
+   body: JSON.stringify({
+      message: inputtedMessage,
+      nick: NICK,
+   }),
+});
+```
+
+
+### 3: Skil på dine egne meldinger
+
+Nå kan vi bruke avsender/navnet på meldingen til å vite hva vi har sendt
+
+```javascript
+Fil: src/App.js
+```
+
+```javascript [5]
+import "./App.css";
+import { useEffect, useState } from "react";
+import Chat from "./components/Chat";
+import ChatMessage from "./components/ChatMessage";
+import ChatMessageReply from "./components/ChatMessageReply";
+```
+
+
+### 3: Skil på dine egne meldinger
+
+```javascript
+Fil: src/App.js
+```
+
+```javascript [3-12]
+<Chat>
+ {messages.map((message) => {
+   if (message.sender === NICK) {
+     return (
+       <ChatMessageReply
+         avatarSrc={message.avatarUrl}
+         name={message.sender}
+       >
+         {message.text}
+       </ChatMessageReply>
+     );
+   }
+
+   return (
+```
+
+
+![Nå ser meldingene fra deg selv annerledes ut enn fra de andre!](/imgs/added_blue_messages.png)
