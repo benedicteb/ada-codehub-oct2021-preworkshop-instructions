@@ -221,7 +221,7 @@ Fil: src/App.js
 
 ```javascript [1-2,8]
 const SUBSCRIBE_URL =
-  "https://codehub-simple-chat-api.herokuapp.com/subscribe";
+  "https://codehub-simple-chat-api.herokuapp.com/subscribe/1";
 
 function App() {
   const [messages, setMessages] = useState([]);
@@ -360,7 +360,7 @@ Fil: src/App.js
 
 ```javascript [3-4]
 const SUBSCRIBE_URL =
-  "https://codehub-simple-chat-api.herokuapp.com/subscribe";
+  "https://codehub-simple-chat-api.herokuapp.com/subscribe/1";
 const SEND_MESSAGE_URL =
   "https://codehub-simple-chat-api.herokuapp.com/sendMessage";
 ```
@@ -468,7 +468,7 @@ Fil: src/App.js
 
 ```javascript [6]
 const SUBSCRIBE_URL =
-  "https://codehub-simple-chat-api.herokuapp.com/subscribe";
+  "https://codehub-simple-chat-api.herokuapp.com/subscribe/1";
 const SEND_MESSAGE_URL =
   "https://codehub-simple-chat-api.herokuapp.com/sendMessage";
 
