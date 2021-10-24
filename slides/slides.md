@@ -30,6 +30,13 @@ Nyttig å ha den åpen i en fane!
 
 ## Siddise
 
+Frontend utvikler
+
+Jobbet i FINN i litt over 2 år
+
+React, Typescript og Java/Kotlin
+
+Fritiden min går til frivillig arbeid, bøker, film og musikk
 
 
 ## Sanntidsteknologi
