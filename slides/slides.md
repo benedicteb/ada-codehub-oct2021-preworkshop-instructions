@@ -539,3 +539,93 @@ Fil: src/App.js
 
 
 ![Nå ser meldingene fra deg selv annerledes ut enn fra de andre!](/imgs/added_blue_messages.png)
+
+
+### 4: Legg på styling for input-feltet
+
+> No har me juksa litt ...
+
+Legg på to **CSS**-klasser jeg har laget for å få input-feltet og send-knappen til å se
+litt kulere ut.
+
+Du kan justere på disse selv i `src/App.css`
+
+
+### 4: Legg på styling for input-feltet
+
+```javascript
+Fil: src/App.js
+```
+
+```javascript [1]
+<main className="HeightAdjusted">
+     <h1>CodehubCHAT!</h1>
+```
+
+```javascript [1]
+<form className={"InputForm"}>
+  <input type="text" id="chat-input-field" />
+  <button
+```
+
+
+### 5: Chat-vinduet må scrolle av seg selv
+
+Hvis ikke så ser vi ikke nye meldinger hvis de dukker opp utenfor skjermen
+
+Merk at `[messages]` gjør at koden blir kjørt når `messages` endrer seg
+
+```javascript
+Fil: src/App.js
+```
+
+```javascript []
+useEffect(() => {
+ const chatlogRoot = document.getElementById("chatlog-root");
+
+ chatlogRoot.scrollTo(0, chatlogRoot.scrollHeight);
+}, [messages]);
+```
+
+
+
+## Utfordring 1
+
+Legg til ditt eget profil-bilde. For at ikke bare du selv skal se det trenger du en `http`-lenke
+
+#### Eksempel
+
+1. Gå på Github-profilen din
+2. Høyreklikk på profilbildet ditt og klikk "Kopier bildeadresse"
+
+
+### Hint
+
+`body` kan ha flere parametre
+
+
+
+## Utfordring 2
+
+La brukeren skrive inn navnet sitt når de først åpner appen
+
+Slik at de ikke må inn i koden for å endre det
+
+
+### Hint 1
+
+Du trenger en `useState` og `useEffect` til
+
+
+### Hint 2
+
+Du må bruke `if` og `return` for å returnere noe annet hvis brukernavnet ikke er satt
+
+
+### Hint 3
+
+Hvis du har fulgt hintene over så kan du kopiere mye av `<form>`
+
+
+
+## Hva har vi lært?
