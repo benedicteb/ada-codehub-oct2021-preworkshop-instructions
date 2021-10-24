@@ -39,6 +39,7 @@ React, Typescript og Java/Kotlin
 Fritiden min går til frivillig arbeid, bøker, film og musikk
 
 
+
 ## Sanntidsteknologi
 
 (Real-time communication)
