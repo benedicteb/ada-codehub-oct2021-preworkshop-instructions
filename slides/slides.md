@@ -57,9 +57,15 @@ By Maria ([Zoom-link](https://NTNU.zoom.us/j/98421983257?pwd=UkQ1OVBMZEtWOUJrd1k
 
 ### Siddise
 
-* Frontend utvikler, React, Typescript og Java/Kotlin
-* Jobbet i FINN i litt over 2 år
-* Fritiden min går til frivillig arbeid, bøker, film og musikk
+<div style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center">
+   <img src="/imgs/siddise_skrik.png" alt="Siddise står i FINN sin Munch utstilling" width="400px" />
+
+   <ul style="margin-left: 80px;">
+      <li>Utvikler, jobber med eiendomsannonser og bedriftsenter for eiendomsmeglere som bruker FINN</li>
+      <li>Frivillig arbeid</li>
+      <li>Bøker, film og musikk</li>
+   </ul>
+</div>
 
 
 ### Hvordan er det å jobbe i FINN?
