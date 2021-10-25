@@ -30,6 +30,9 @@ De som vil kan da vise frem det de har laget under oppsummeringen
 
 ## Lyntalen
 
+> How we apply machine learning and data science to solve different problems at Schibsted
+
+By Maria ([Zoom-link](https://NTNU.zoom.us/j/98421983257?pwd=UkQ1OVBMZEtWOUJrd1k0RjZrYlk1Zz09))
 
 
 ## Om oss (og om FINN)
