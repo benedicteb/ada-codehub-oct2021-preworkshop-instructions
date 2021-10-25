@@ -17,6 +17,16 @@ Nyttig å ha den åpen i en fane!
 
 ## Agenda
 
+| ~ kl.    |                               |
+|:-------------|:------------------------------|
+| 16:30        | Introduksjon                  |
+| 16:45        | Koding (alene eller i gruppe) |
+| 17:45        | Lyntale (Zoom, Engelsk)       |
+| 18:00        | Fortsette koding              |
+| 18:45        | Oppsummering                  |
+
+De som vil kan da vise frem det de har laget
+
 
 ## Lyntalen
 
