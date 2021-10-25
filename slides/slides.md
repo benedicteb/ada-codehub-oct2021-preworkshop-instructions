@@ -53,6 +53,9 @@ Fritiden min går til frivillig arbeid, bøker, film og musikk
 ### Hvordan er det å jobbe i FINN?
 
 
+![Bilde av plakatan fra FINN sin kampanje flytte fra gutterommet](/imgs/flytte_fra_gutterommet.jpeg)
+
+
 ![Skjermbilde fra Slack hvor kanalen er proppet full av feirende animerte gif memes av alle slag](/gifs/boom.gif)
 
 
