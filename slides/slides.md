@@ -96,7 +96,37 @@ By Maria ([Zoom-link](https://NTNU.zoom.us/j/98421983257?pwd=UkQ1OVBMZEtWOUJrd1k
 <!-- Image shamelessly stolen from: https://www.androidauthority.com/facebook-messenger-unsend-launch-925160/ -->
 
 
-## EventSource
+![En mobil spør en server om den har nye meldinger, serveren har ingen](/imgs/ingen_nye_meldinger.png)
+
+
+![En mobil spør en server mange ganger om den har nye meldinger, til slutt får den ja](/imgs/ny_melding_til_slutt.png)
+
+
+![En mobil abonnerer på meldinger fra en server ved å snakke til den](/imgs/abonner_meldinger.png)
+
+
+## Server Sent Events
+
+aka. SSE eller EventStream
+
+* **En**-veiskommunikasjon
+* Nettleseren har veldig god innebygget støtte via `EventSource`
+* Bak kulissene veldig **enkel** og robust
+
+
+## WebSockets
+
+* Ligner veldig på SSE men har flere funksjoner
+* Bak kulissene veldig avansert
+* Lar **klienten** (brukeren, den som kobler seg til) sende data tilbake over samme kanal
+
+
+![Animert gif som viser folk samarbeid om et Q4 report dokument i Google Docs Writer](/gifs/google-docs-live-edits.gif)
+<!-- Image shamlessly stolen from: https://9to5google.com/2019/08/20/google-docs-live-edits/ -->
+
+
+
+## La oss kode litt!
 
 
 
