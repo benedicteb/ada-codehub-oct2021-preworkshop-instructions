@@ -36,18 +36,27 @@ By Maria ([Zoom-link](https://NTNU.zoom.us/j/98421983257?pwd=UkQ1OVBMZEtWOUJrd1k
 
 
 
-## Benedicte
+### Benedicte [@benedebr](https://twitter.com/benedebr)
+
+<div style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center">
+   <img src="/imgs/benedicte_schibsted.jpg" alt="Benedicte står ved pulten sin på FINN-kontoret, fargerikt tastatur og en enhjørning som håndleddsstøtte" width="400px" />
+
+   <ul style="margin-left: 80px;">
+      <li>Utvikler, jobber med betalingsløsninger i FINN</li>
+      <li>
+         <p>Dataspill og tastaturbygging på fritiden</p>
+         <img src="/imgs/building_keyboard.jpg" alt="Et halvferdig tastatur" width="200px" />
+      </li>
+      <li>Synger i kor</li>
+   </ul>
+</div>
 
 
-## Siddise
+### Siddise
 
-Frontend utvikler
-
-Jobbet i FINN i litt over 2 år
-
-React, Typescript og Java/Kotlin
-
-Fritiden min går til frivillig arbeid, bøker, film og musikk
+* Frontend utvikler, React, Typescript og Java/Kotlin
+* Jobbet i FINN i litt over 2 år
+* Fritiden min går til frivillig arbeid, bøker, film og musikk
 
 
 ### Hvordan er det å jobbe i FINN?
