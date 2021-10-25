@@ -80,6 +80,10 @@ By Maria ([Zoom-link](https://NTNU.zoom.us/j/98421983257?pwd=UkQ1OVBMZEtWOUJrd1k
 ![Skjermbilde av summer boost innlegget på jobb i FINN nettsidene](/imgs/alpaca_in_finn.png)
 
 
+<!-- Empty slide for black screen -->
+<!-- .slide: data-background="black" -->
+
+
 
 ## Sanntidsteknologi
 
