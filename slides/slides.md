@@ -28,6 +28,9 @@ Nyttig å ha den åpen i en fane!
 De som vil kan da vise frem det de har laget under oppsummeringen
 
 
+![Demo av chatten vi skal bygge, to nettleservinduer som snakker med hverandre i en Messenger-lignende app](/gifs/working_chat_demo.gif)
+
+
 ## Lyntalen
 
 > How we apply machine learning and data science to solve different problems at Schibsted
