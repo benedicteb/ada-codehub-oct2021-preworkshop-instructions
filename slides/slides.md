@@ -718,3 +718,13 @@ Hvis du har fulgt hintene over så kan du kopiere mye av `<form>`
 
 
 ## Hva har vi lært?
+
+
+* Sanntidsteknologi betyr at noe skjer **med en gang**
+* Strategier for sanntids-kommunikasjon:
+  * `Polling`
+  * `Long-Polling`
+  * `EventStream`/`SSE`
+  * `Websockets`
+  * (det finnes flere)
+* I FINN/Schibsted får du jobbet med dette og **mer**
