@@ -82,7 +82,11 @@ By Maria ([Zoom-link](https://NTNU.zoom.us/j/98421983257?pwd=UkQ1OVBMZEtWOUJrd1k
 
 (Real-time communication)
 
-> Når noe skal skje samtidig
+> Når noe skal skje **med en gang**
+
+
+<img src="/imgs/messenger_screen.jpg" height="700px" alt="Skjermbilde fra en tilfeldig Facebook Messenger-app hvor meldingene er blurret ut" />
+<!-- Image shamelessly stolen from: https://www.androidauthority.com/facebook-messenger-unsend-launch-925160/ -->
 
 
 ## EventSource
@@ -647,7 +651,9 @@ Legg til ditt eget profil-bilde. For at ikke bare du selv skal se det trenger du
 
 ### Hint
 
-`body` kan ha flere parametre
+`body`-argumentet der vi kaller `fetch` kan ha flere parametre
+
+Ser du et relevant parameter vi bruker et annet sted?
 
 
 
