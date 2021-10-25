@@ -35,8 +35,6 @@ De som vil kan da vise frem det de har laget under oppsummeringen
 By Maria ([Zoom-link](https://NTNU.zoom.us/j/98421983257?pwd=UkQ1OVBMZEtWOUJrd1k0RjZrYlk1Zz09))
 
 
-## Om oss (og om FINN)
-
 
 ## Benedicte
 
@@ -50,6 +48,21 @@ Jobbet i FINN i litt over 2 år
 React, Typescript og Java/Kotlin
 
 Fritiden min går til frivillig arbeid, bøker, film og musikk
+
+
+### Hvordan er det å jobbe i FINN?
+
+
+![Skjermbilde fra Slack hvor kanalen er proppet full av feirende animerte gif memes av alle slag](/gifs/boom.gif)
+
+
+![PuseFINN i regnponcho](/imgs/PuseFINN_regnoncho.jpg)
+
+
+![Skjermbilde av nettsiden hvordan det er å jobbe i FINN](/imgs/working_in_finn.png)
+
+
+![Skjermbilde av summer boost innlegget på jobb i FINN nettsidene](/imgs/alpaca_in_finn.png)
 
 
 
