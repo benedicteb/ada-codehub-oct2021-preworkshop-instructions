@@ -25,7 +25,7 @@ Nyttig å ha den åpen i en fane!
 | 18:00        | Fortsette koding              |
 | 18:45        | Oppsummering                  |
 
-De som vil kan da vise frem det de har laget
+De som vil kan da vise frem det de har laget under oppsummeringen
 
 
 ## Lyntalen
